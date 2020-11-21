@@ -2,7 +2,7 @@
 <html lang="en" ng-app="angularTable">
   <head>
     <meta charset="utf-8">
-    <title>COVID-19 Semantic Browser</title>
+    <title>COVID-19 Semantic Search Engine</title>
     <!--Angularjs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-route.js"></script>
@@ -36,14 +36,14 @@
             <div  id="banner" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
               <div class="left-side">
                 <img id="icon" src="img/icon_nobg.svg" width="70" height="70" alt="Covid-19 Semantic Browser Logo"/>
-                <h1 id="banner-title">Covid-19 Semantic Browser</h1>
+                <h1 id="banner-title">COVID-19 Semantic Search Engine</h1>
               </div>
               <div class="filler"></div>
-              <div class="right-size">
+              <!--<div class="right-size">
                 <a href="https://github.com/gsarti/covid-papers-browser">
                   <img id="github-icon" src="img/github_logo.svg" width="40" height="40" alt="Github Link"/>
                 </a>
-              </div>
+              </div>-->
             </div>
         </div>
 
@@ -69,30 +69,9 @@
 
         <div class="row description" id="description">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <b>Covid-19 Semantic Browser</b>&nbsp;leverages state-of-the-art neural networks to search relevant articles inside the 
-            <a href="https://pages.semanticscholar.org/coronavirus-research">COVID-19 Open Research Dataset (CORD-19)</a>&nbsp;
-            published by the American nonprofit&nbsp;<a href="https://allenai.org/">Allen Institute for Artificial Intelligence</a>. 
-            By releasing an effective way to search for recent information about SARS-CoV-2 and Covid-19, we hope to facilitate the sharing
-	    of information in the research community and accelerate the development of new vaccines and treatments.
             <br>
             <br>
-            This project is led by&nbsp;<a href="https://gsarti.com/">Gabriele Sarti</a>&nbsp;from the 
-            <a href="https://dssc.units.it/">Data Science program</a>&nbsp;at University of Trieste & SISSA, and is the product of a 
-            collaboration between the&nbsp;<a href="http://www.ai-lc.it/">Italian Association for Computational Linguistics</a>
-             and&nbsp;<a href="http://en.areasciencepark.it/">Area Science Park</a>, in the framework of the
-            <a href="http://www.sistemaargo.it/">ARGO</a>&nbsp;initiative and its 
-            <a href="https://www.areasciencepark.it/piattaforme-tecnologiche/">R&D Platforms</a>, which offers highly advanced 
-            competences and equipment for R&D activities both to the public and the private sector.
-            <br>
-            <br>
-             The development team is currently composed by <a href="http://www.di.unito.it/~lai/">Mirko Lai</a>,
-             <a href="https://www.linkedin.com/in/tommaso-rodani-471a43b8/">Tommaso Rodani</a>,
-             <a href="https://www.linkedin.com/in/marco-franzon/">Marco Franzon</a> and
-             <a href="https://www.linkedin.com/in/francesco-saverio-zuppichini-94659a150/">Francesco Zuppichini</a>.
-             Code and all the models are open-source and available on <a href="https://github.com/gsarti/covid-papers-browser">Github</a>.
-            <br>
-            <br>
-            To get started, search something that interests you, e.g.&nbsp;<a href="#" ng-click="data.exampleSearch()">Is chloroquine effective against SARS-CoV-2?</a>
+            To get started, search something that interests you, e.g.&nbsp;<a href="#" ng-click="data.exampleSearch()">Mental health in Covid-19?</a>
           </div>
         </div>
 
@@ -126,7 +105,7 @@
               </div>
             </div>
 
-            <div class="row">
+           <!-- <div class="row">
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 articlelist flexbox">
                 <label for="journal">Journal:</label>
               </div>
@@ -142,7 +121,7 @@
               <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 articlelist">
                 <select id="license-selectpicker"  data-size="6" data-live-search="true" data-live-search-placeholder="Search" data-actions-box="true" class="selectpicker license-select" multiple  data-style="btn-primary" ng-model="data.license"  ng-options="license[0] for license in data.licenses" ng-change="data.update_button()"></select>
               </div>
-            </div> 
+            </div>  -->
 
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 articlelist filter-buttons">
@@ -223,20 +202,14 @@
         </div>
         <footer id="footer">
           <div class="filler"></div>
-          <a href="http://www.ai-lc.it/" >
-            <img src="http://www.ai-lc.it/wp-content/uploads/2016/10/AILC_Logo_header-1.png" width="316" height="50" style="max-height:50px;height:auto;" alt="AILC Logo" class="img-responsive" />
-          </a>
-          <a href="http://en.areasciencepark.it/" >
-            <img src="http://en.areasciencepark.it/wp-content/themes/areasciencepark_v3/assets/img/logo.svg" width="200" height="50" style="max-height:50px;height:auto;" alt="Area Logo" class="img-responsive" />
-          </a>
-          <a href="http://www.sistemaargo.it/" >
-            <img src="img/argo_logo.png" width="200" height="50" style="max-height:50px;height:auto;" alt="ARGO Logo" class="img-responsive" />
+          <a>
+            <img src="img/argo_logo.png" width="200" height="200" alt="ARGO Logo" class="img-responsive" />
           </a>
         </footer>
         <!-- logo and title -->
 <!-- 
         <div id="header" class="row">
-
+style="max-height:50px;height:auto;"
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">   
             
           </div>

@@ -180,8 +180,8 @@ app.controller('listdata',function($http,$scope,$timeout){
    };
 
     vm.exampleSearch = function(){
-      $("#search").val("Is chloroquine effective against SARS-CoV-2?")
-      vm.query="Is chloroquine effective against SARS-CoV-2?"
+      $("#search").val("Mental health in Covid-19?")
+      vm.query="Mental health in Covid-19?"
       vm.getData(1)
     };
 
