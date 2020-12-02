@@ -40,7 +40,6 @@ if __name__ == "__main__":
 
     for entry in tqdm(entries):
         if 'paragraphs' in entry:
-            # TODO by @Francesco, we can iterate in paragraphs and create subdocuments linked to paragraphs
             entry['paragraphs'] = entry['paragraphs'][:100]
             entry['paragraphs_embeddings'] = entry[
                 'paragraphs_embeddings'][:100]
